@@ -6902,8 +6902,11 @@ function TicketWidget(props) {
       setLoading(false);
     }
   };
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "p-4 border border-gray-200 rounded shadow ticket-widget"
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("link", {
+    href: "./output.css",
+    rel: "stylesheet"
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "p-4 border rounded shadow border-black-300 ticket-widget"
   }, /*#__PURE__*/_react.default.createElement("h2", {
     className: "text-lg font-semibold"
   }, "Submit a Ticket"), error && /*#__PURE__*/_react.default.createElement("p", {
@@ -6944,7 +6947,7 @@ function TicketWidget(props) {
     type: "submit",
     disabled: loading,
     className: "p-2 mt-4 text-white bg-blue-500 rounded hover:bg-blue-700"
-  }, loading ? "Submitting..." : "Submit Ticket")));
+  }, loading ? "Submitting..." : "Submit Ticket"))));
 }
 var _default = exports.default = TicketWidget;
 },{"react":"n8MK","axios":"dZBD"}],"lY9v":[function(require,module,exports) {
