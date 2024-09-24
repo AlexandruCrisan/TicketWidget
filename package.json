@@ -18,9 +18,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "build:widget": "parcel build src/index.js --no-minify --no-source-maps -d widget && copy build/static/css/*.css widget/index.css",
-        "predeploy": "npm run build:widget",
-        "deploy": "gh-pages -d build"
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "eslintConfig": {
         "extends": [
@@ -41,9 +40,21 @@
         ]
     },
     "devDependencies": {
+        "@babel/core": "^7.25.2",
+        "@babel/preset-env": "^7.25.4",
+        "@babel/preset-react": "^7.24.7",
+        "autoprefixer": "^10.4.20",
+        "babel-loader": "^9.2.1",
+        "css-loader": "^7.1.2",
         "gh-pages": "^6.1.1",
+        "html-webpack-plugin": "^5.6.0",
         "parcel-bundler": "^1.12.5",
-        "tailwindcss": "^3.4.12"
+        "postcss": "^8.4.47",
+        "postcss-loader": "^8.1.1",
+        "style-loader": "^4.0.0",
+        "tailwindcss": "^3.4.12",
+        "webpack": "^5.94.0",
+        "webpack-cli": "^5.1.4"
     }
 }
 
