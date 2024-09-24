@@ -9,7 +9,7 @@ function TicketWidget(props) {
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState("");
 
-    const apiBaseUrl = "https://localhost:5001/api";
+    const apiBaseUrl = "http://localhost:5059/api";
 
     const handleSubmit = async (e) => {
         e.preventDefault();
